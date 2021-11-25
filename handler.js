@@ -82,7 +82,7 @@ module.exports = {
           if (!('descUpdate' in chat)) chat.descUpdate = true
           if (!('stiker' in chat)) chat.stiker = false
           if (!('delete' in chat)) chat.delete = true
-          if (!('antiLink' in chat)) chat.antiLink = false
+          if (!('antiLink' in chat)) chat.antiLink = true
           if (!isNumber(chat.expired)) chat.expired = 0
           if (!('antiBadword' in chat)) chat.antiBadword = true
           if (!('viewonce' in chat)) chat.viewonce = true
@@ -97,7 +97,7 @@ module.exports = {
           descUpdate: true,
           stiker: false,
           delete: true,
-          antiLink: false,
+          antiLink: true,
           expired: 0,
           antiBadword: true,
           viewonce: true,
@@ -329,7 +329,7 @@ module.exports = {
                 console.error(e)
               }
             }
-            // if (m.limit) m.reply(+ m.limit + ' Limit terpakai') // Jadikan sebagai komentar jika kamu risih dengan pesan ini
+            /*/ if (m.limit) m.reply(+ m.limit + ' Limit terpakai') // Jadikan sebagai komentar jika kamu risih dengan pesan ini*/
           }
           break
         }
