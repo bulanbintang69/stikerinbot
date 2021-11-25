@@ -1,5 +1,5 @@
 let fs = require('fs')
-global.owner = ['6283128734012', '6288709645535'] // Letakan nomor kamu disini
+global.owner = ['6283102050562', '6283112858178'] // Letakan nomor kamu disini
 global.mods = [] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
@@ -9,7 +9,7 @@ global.APIs = { // API Prefix
   dhnjing: 'https://dhnjing.xyz',
   hardianto: 'https://hardianto-chan.herokuapp.com',
   jonaz: 'https://jonaz-api-v2.herokuapp.com',
-  neoxr: 'https://api.neoxr.eu.org',
+  neoxr: 'https://neoxr-api.herokuapp.com',
   nrtm: 'https://nurutomo.herokuapp.com',
   pencarikode: 'https://pencarikode.xyz',
   xteam: 'https://api.xteam.xyz',
@@ -24,17 +24,17 @@ global.APIKeys = { // APIKey nya disini
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'pais',
-  'https://api.xteam.xyz': 'apikeymu',
+  'https://api.xteam.xyz': '9c8ec9201f4a9b20',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.xyz': 'apivinz',
+  'https://api.zeks.xyz': 'FeGgLPGEeREadOgAVcjAb13EADl',
 }
 
 // Sticker WM
-global.packname = '❤️'
-global.author = 'ariffb'
+global.packname = 'baca syarat dan ketentuan di:\nhttps://t.me/whatsappbot1'
+global.author = ''
 
-global.wait = '_*tunggu sedang di proses...*_'
-global.eror = '_*Server Error*_'
+global.wait = '_*tunggu sedang di proses....*_'
+global.eror = '_*maaf gabisa, silahkan ulangi atau ganti peritah lain*_'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
