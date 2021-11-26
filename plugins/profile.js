@@ -33,15 +33,34 @@ let handler = async (m, { conn, usedPrefix }) => {
     let username = conn.getName(who)
     let math = max - xp
     let str = `
-Nama: ${username} ${registered ? '(' + name + ') ' : ''}(@${who.replace(/@.+/, '')})${about != 401 ? '\nInfo: ' + about : ''}
+Nama: ${username} ${registered ? '(' + name + ') ' : ''}(@${who.replace(/@.+/, '')})${about != 401 ? '\nBio: ' + about : ''}
 Nomor: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 Link: https://wa.me/${who.split`@`[0]}${registered ? '\nUmur: ' + age : ''}
-XP: TOTAL ${exp} (${exp - min} / ${xp}) [${math <= 0 ? `Siap untuk *${usedPrefix}levelup*` : `${math} XP lagi untuk levelup`}]
-Level: ${level}
-Role: *${role}*
-Limit: ${limit}
 Premium: ${prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'Ya' : 'Tidak'}
-Terdaftar: ${registered ? 'Ya (' + new Date(regTime).toLocaleString() + ')' : 'Tidak'}${lastclaim > 0 ? '\nTerakhir Klaim: ' + new Date(lastclaim).toLocaleString() : ''}
+_*MENU*_
+*STIKER*
+#stiker atau #s
+(balas photo/gif dengan #s )
+*catatan kalau video mau diubah kestiker
+jadikan gif dulu ya biar bisa gerak
+*DOWNLOADER*
+#ytmp4
+(contoh: #ytmp4 spasi linknya)
+#ytmp3
+(contoh: #ytmp3 spasi linknya)
+#ig
+(contoh: #ig spasi linknya)
+#twitter
+(contoh: #twitter spasi linknya)
+#tiktok
+(contoh: #tiktok spasi linknya)
+[youtube short blum bisa]
+*TAMBAHAN*
+#tomp3
+(balas vn dgn #tomp3 agar jd mp3)
+#tovn
+(balas musik dgn #tovn agar jd vn)
+kalau ga muncul silahkan ulangi
 `.trim()
     let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'pp.jpg', banned ? 'jiakh ke banned' : str, m, false, { contextInfo: { mentionedJid } })
@@ -49,5 +68,5 @@ Terdaftar: ${registered ? 'Ya (' + new Date(regTime).toLocaleString() + ')' : 'T
 }
 handler.help = ['profile [@user]']
 handler.tags = ['tools']
-handler.command = /^profile?$/i
+handler.command = /^menu|help?$/i
 module.exports = handler
