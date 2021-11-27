@@ -1,0 +1,8 @@
+FORMAT ORDER 
+🅵🆁🅴🅴 🅵🅸🆁🅴
+┏▬▬▬▬▬ ▬
+┠NICK :
+┠USER ID :
+┠JUMLAH ORDER :
+┠SISA DIAMOND :
+┗▬▬▬▬▬▬ ▬

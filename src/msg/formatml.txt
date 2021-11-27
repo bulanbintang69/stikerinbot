@@ -1,0 +1,9 @@
+FORMAT ORDER 
+𝗠𝗢𝗕𝗜𝗟𝗘 𝗟𝗘𝗚𝗘𝗡𝗗𝗦
+┏▬▬▬▬▬ ▬
+┠NICK :
+┠USER ID :
+┠NO SERVER :
+┠JUMLAH ORDER :
+┠SISA DIAMOND :
+┗▬▬▬▬▬▬ ▬
