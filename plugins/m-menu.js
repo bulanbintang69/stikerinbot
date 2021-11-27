@@ -330,7 +330,7 @@ previewType: 0,
 }
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(topup)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
